@@ -1,38 +1,72 @@
 <html lang="en">
 <head>
     <title>A simple HTML document</title>
-    <link rel="stylesheet" href="style.css">
- 
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
 </head>
 <body>
-    <div id = "nav" style="color:blue; position: fixed; right: 150px;"> 
-    <p>home</p>
-    <p>about Feng Shui</p>
-    <p>principle 1: Yin & Yang</p>
-    <p>principle 2: Qi </p>
-    <p>principle 3: Five Elements </p>
-    <p> applied to site selection </p>
-    <p> Case Study: Workspace6 </p>
-    <p> Bibliography </p>
+    <div class="nav" >
+    <p onclick="about()"><span id = "about1" class="active">about</span></p>
+    <p onclick="aboutfengshui()"><span id ="aboutfengshui1">about Feng Shui</span></p>
+    <p onclick="yingyang()"><span id ="yingyang1">principle 1: Yin & Yang</span></p>
+    <p onclick="chi()"><span id ="chi1">principle 2: Chi </span></p>
+    <p onclick="fiveelements()"><span id ="fiveelements1" >principle 3: Five Elements </span></p>
+    <p onclick="applied()"><span id ="applied1" > applied to site selection </span></p>
+    <p onclick="casestudy()"><span id ="casestudy1"> case study: workspace6 </span></p>
+    <p onclick="bibliography()"><span id ="bibliography1"> bibliography </span></p>
     </div>
 
-    <div id = "home"> 
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
+    <div class = "contentbox" style ="display: block" >
+        <div id ="about" >
+            <h1>About This Project</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
 
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
-    <p>This is a paragraph.</p>
+
+        <div id ="aboutfengshui" style ="display: none">
+            <h1><i>Feng Shui</i>: a general overview</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <div id ="yingyang" style ="display: none">
+            <h1><i>Ying Yang</i>: a general overview</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <div id ="chi" style ="display: none">
+            <h1><i>Chi</i>: a general overview</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <div id ="fiveelements" style ="display: none">
+            <h1>The Five Elements: a general overview</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <div id ="applied" style ="display: none">
+            <h1>Appling Feng Shui to Site Selection</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <div id ="casestudy" style ="display: none">
+            <h1>Case Study: Workspace6</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <div id ="bibliography" style ="display: none">
+            <h1>Bibliography</h1>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
+
+
 
     </div>
 </body>
